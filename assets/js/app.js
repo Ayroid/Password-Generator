@@ -30,5 +30,5 @@ function generator(length) {
 function copy(){
     let text = document.getElementById('display')
     navigator.clipboard.writeText(text.innerText)
-    alert("Copied to Clipboard!")
+    // alert("Copied to Clipboard!")
 }
