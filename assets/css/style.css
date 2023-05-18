@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    margin: 10dvh 0;
+    height: 80dvh;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+.heading{
+    margin-top: 6rem;
+}
+
+.heading h1{
+    margin: 0;
+    font-weight: 500;
+    font-size: calc(2em + 1vw);
+    text-align: center;
+}
+
+.hrs{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+hr{
+    height: 2px;
+    border: none;
+    background-color: black;
+    width: 25%;
+    color: black;
+    margin-top: 1.2rem;
+    margin-inline: 10px;
+}
+
+.main-box{
+    height: 25vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.display{
+    height: min(9vw, 9vh);
+    width: min(60rem, 90vw);
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: min(5.5vw, 4vh);
+    margin-top: 3vh;
+}
+
+.scroll{
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-inline: 5rem;
+}
+
+.scroll input{
+    -webkit-appearance: none;
+    width: min(50rem,70vw);
+    scroll-snap-stop:always;
+    height: 2px;
+    border-radius: 5px;
+    margin: 2.5rem 1.5rem;
+    background: gray;
+}
+
+.scroll input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: gray;
+    border-radius: 20px;
+    height: 1.2rem;
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+.scroll input:focus{
+    border: transparent;
+    outline: none;
+}
+
+.disp-num{
+    background: white;
+    height: min(5rem,8vh);
+    width: min(8rem, 9vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    border-radius: 10px;
+}
+
+.copy{
+    padding: min(1rem, 1.3vh);
+    margin-top: 2rem;
+    width: min(6rem, 20vw);
+    border: none;
+    background-color: gold;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy:hover{
+    cursor: pointer;
+}
+

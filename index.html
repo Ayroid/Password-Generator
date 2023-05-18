@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>PASSWORD GENERATOR</h1>
+            <div class="hrs">
+                <hr>X<hr>
+            </div>
+        </div>
+        <div class="main-box">
+            <div class="display" id="display">------------</div>
+            <div class="copy" onclick="copy()">COPY</div>
+            <div class="scroll">
+                <input type="range" name="scroll-bar" id="bar" min="4" max="30" value="12"
+                    onchange="generator(this.value)">
+                <div class="disp-num" id="disp-num">12</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
