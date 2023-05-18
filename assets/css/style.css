@@ -53,13 +53,14 @@ hr{
 
 .display{
     height: min(9vw, 9vh);
-    width: min(60rem, 90vw);
+    width: min(60rem, 95vw);
     background-color: white;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: min(5.5vw, 4vh);
+    padding: 1rem 0.2rem;
     margin-top: 3vh;
 }
 
@@ -118,9 +119,12 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 200ms ease-in-out;
 }
 
 .copy:hover{
     cursor: pointer;
+    transform: scale(1.1);
+    transition: 200ms ease-in-out;
 }
 
