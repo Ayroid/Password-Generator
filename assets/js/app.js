@@ -23,8 +23,8 @@ function generator(length) {
                 pass += symbols.charAt(Math.floor((Math.random() * symbols.length) + 1))
                 break
         }
-        document.getElementById('display').innerText = pass
     }
+    document.getElementById('display').innerText = pass
 }
 
 function copy() {
