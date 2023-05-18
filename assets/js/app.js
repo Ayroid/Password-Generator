@@ -35,21 +35,13 @@ function generator(length) {
 function copy() {
     let text = document.getElementById('display').innerText;
     
-    // Create a temporary input element
-    const input = document.createElement('input');
+    let input = document.createElement('input');
     input.value = text;
     
-    // Append the input element to the document
     document.body.appendChild(input);
-    
-    // Select the text in the input
     input.select();
-    input.setSelectionRange(0, 99999); // For mobile devices
-    
-    // Prompt the user to copy the text
+    input.setSelectionRange(0, 99999);
     document.execCommand('copy');
-    
-    // Remove the temporary input element
     document.body.removeChild(input);
   }
   
